@@ -1,0 +1,170 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/houssam/Workspace/azure/dotnet-distributed-tracing-examples/src/4-azuremonitor/Demo.Worker/Demo.Worker.csproj": {}
+  },
+  "projects": {
+    "/home/houssam/Workspace/azure/dotnet-distributed-tracing-examples/src/4-azuremonitor/Demo.ApplicationInsights/Demo.ApplicationInsights.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/houssam/Workspace/azure/dotnet-distributed-tracing-examples/src/4-azuremonitor/Demo.ApplicationInsights/Demo.ApplicationInsights.csproj",
+        "projectName": "Demo.ApplicationInsights",
+        "projectPath": "/home/houssam/Workspace/azure/dotnet-distributed-tracing-examples/src/4-azuremonitor/Demo.ApplicationInsights/Demo.ApplicationInsights.csproj",
+        "packagesPath": "/home/houssam/.nuget/packages/",
+        "outputPath": "/home/houssam/Workspace/azure/dotnet-distributed-tracing-examples/src/4-azuremonitor/Demo.ApplicationInsights/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/houssam/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.ApplicationInsights": {
+              "target": "Package",
+              "version": "[2.19.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.8, 6.0.8]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/6.0.400/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/houssam/Workspace/azure/dotnet-distributed-tracing-examples/src/4-azuremonitor/Demo.Worker/Demo.Worker.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/houssam/Workspace/azure/dotnet-distributed-tracing-examples/src/4-azuremonitor/Demo.Worker/Demo.Worker.csproj",
+        "projectName": "Demo.Worker",
+        "projectPath": "/home/houssam/Workspace/azure/dotnet-distributed-tracing-examples/src/4-azuremonitor/Demo.Worker/Demo.Worker.csproj",
+        "packagesPath": "/home/houssam/.nuget/packages/",
+        "outputPath": "/home/houssam/Workspace/azure/dotnet-distributed-tracing-examples/src/4-azuremonitor/Demo.Worker/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/houssam/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "/home/houssam/Workspace/azure/dotnet-distributed-tracing-examples/src/4-azuremonitor/Demo.ApplicationInsights/Demo.ApplicationInsights.csproj": {
+                "projectPath": "/home/houssam/Workspace/azure/dotnet-distributed-tracing-examples/src/4-azuremonitor/Demo.ApplicationInsights/Demo.ApplicationInsights.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Azure.Messaging.ServiceBus": {
+              "target": "Package",
+              "version": "[7.5.0, )"
+            },
+            "Elasticsearch.Extensions.Logging": {
+              "target": "Package",
+              "version": "[1.6.0-alpha1, )"
+            },
+            "Microsoft.ApplicationInsights.WorkerService": {
+              "target": "Package",
+              "version": "[2.21.0, )"
+            },
+            "Microsoft.Azure.Functions.Extensions": {
+              "target": "Package",
+              "version": "[1.1.0, )"
+            },
+            "Microsoft.Azure.ServiceBus": {
+              "target": "Package",
+              "version": "[5.2.0, )"
+            },
+            "Microsoft.Azure.WebJobs.Extensions.ServiceBus": {
+              "target": "Package",
+              "version": "[5.1.0, )"
+            },
+            "Microsoft.Extensions.Azure": {
+              "target": "Package",
+              "version": "[1.6.0, )"
+            },
+            "Microsoft.Extensions.Hosting": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.8, 6.0.8]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/6.0.400/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

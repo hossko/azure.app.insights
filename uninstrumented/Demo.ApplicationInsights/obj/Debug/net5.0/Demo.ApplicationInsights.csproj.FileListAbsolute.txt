@@ -1,0 +1,12 @@
+/home/houssam/Workspace/azure/dotnet-distributed-tracing-examples/src/4-azuremonitor/Demo.ApplicationInsights/bin/Debug/net5.0/Demo.ApplicationInsights.deps.json
+/home/houssam/Workspace/azure/dotnet-distributed-tracing-examples/src/4-azuremonitor/Demo.ApplicationInsights/bin/Debug/net5.0/Demo.ApplicationInsights.dll
+/home/houssam/Workspace/azure/dotnet-distributed-tracing-examples/src/4-azuremonitor/Demo.ApplicationInsights/bin/Debug/net5.0/Demo.ApplicationInsights.pdb
+/home/houssam/Workspace/azure/dotnet-distributed-tracing-examples/src/4-azuremonitor/Demo.ApplicationInsights/obj/Debug/net5.0/Demo.ApplicationInsights.csproj.AssemblyReference.cache
+/home/houssam/Workspace/azure/dotnet-distributed-tracing-examples/src/4-azuremonitor/Demo.ApplicationInsights/obj/Debug/net5.0/Demo.ApplicationInsights.GeneratedMSBuildEditorConfig.editorconfig
+/home/houssam/Workspace/azure/dotnet-distributed-tracing-examples/src/4-azuremonitor/Demo.ApplicationInsights/obj/Debug/net5.0/Demo.ApplicationInsights.AssemblyInfoInputs.cache
+/home/houssam/Workspace/azure/dotnet-distributed-tracing-examples/src/4-azuremonitor/Demo.ApplicationInsights/obj/Debug/net5.0/Demo.ApplicationInsights.AssemblyInfo.cs
+/home/houssam/Workspace/azure/dotnet-distributed-tracing-examples/src/4-azuremonitor/Demo.ApplicationInsights/obj/Debug/net5.0/Demo.ApplicationInsights.csproj.CoreCompileInputs.cache
+/home/houssam/Workspace/azure/dotnet-distributed-tracing-examples/src/4-azuremonitor/Demo.ApplicationInsights/obj/Debug/net5.0/Demo.ApplicationInsights.dll
+/home/houssam/Workspace/azure/dotnet-distributed-tracing-examples/src/4-azuremonitor/Demo.ApplicationInsights/obj/Debug/net5.0/refint/Demo.ApplicationInsights.dll
+/home/houssam/Workspace/azure/dotnet-distributed-tracing-examples/src/4-azuremonitor/Demo.ApplicationInsights/obj/Debug/net5.0/Demo.ApplicationInsights.pdb
+/home/houssam/Workspace/azure/dotnet-distributed-tracing-examples/src/4-azuremonitor/Demo.ApplicationInsights/obj/Debug/net5.0/ref/Demo.ApplicationInsights.dll

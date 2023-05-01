@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "o1JP0PZifToyFXlJdsvgBHgWvVnXL4QRQOnlm/spG7PuUxB43EJJe/AUhcimeTbSpmQYwc1fqbJN8KZdxcPuDg==",
+  "success": true,
+  "projectFilePath": "/home/houssam/Workspace/azure/dotnet-distributed-tracing-examples/src/4-azuremonitor/Demo.ApplicationInsights/Demo.ApplicationInsights.csproj",
+  "expectedPackageFiles": [
+    "/home/houssam/.nuget/packages/microsoft.applicationinsights/2.19.0/microsoft.applicationinsights.2.19.0.nupkg.sha512",
+    "/home/houssam/.nuget/packages/system.diagnostics.diagnosticsource/5.0.0/system.diagnostics.diagnosticsource.5.0.0.nupkg.sha512",
+    "/home/houssam/.nuget/packages/microsoft.aspnetcore.app.ref/6.0.8/microsoft.aspnetcore.app.ref.6.0.8.nupkg.sha512"
+  ],
+  "logs": []
+}
