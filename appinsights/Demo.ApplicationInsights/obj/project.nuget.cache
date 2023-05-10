@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "PMszMMjXG+szSp04fXObwreTdR7hZQwrAY62GKAObDQNAhDmrcGjkhdtzWhFrp2RD0tgL3HJ/C/j4DYnu6WSjA==",
+  "success": true,
+  "projectFilePath": "/home/coder/azure/azure.app.insights/uninstrumented/Demo.ApplicationInsights/Demo.ApplicationInsights.csproj",
+  "expectedPackageFiles": [
+    "/home/coder/.nuget/packages/microsoft.applicationinsights/2.19.0/microsoft.applicationinsights.2.19.0.nupkg.sha512",
+    "/home/coder/.nuget/packages/system.diagnostics.diagnosticsource/5.0.0/system.diagnostics.diagnosticsource.5.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

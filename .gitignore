@@ -1,0 +1,9 @@
+**/bin/
+**/.vscode/
+**/node_modules/
+**/iac/.terraform/
+**/iac/.terraform/*
+**/iac/.terraform*
+**/iac/.terraform.lock.hcl
+**/iac/terraform.tfstate*
+**/.terraform/
