@@ -233,7 +233,6 @@ Click on "Drill into... N Samples" in the bottom right, then select the recent o
 
 The page will show the End-to-end transaction with the correlation Operation ID (the same as the console), along with a hierarchical timeline of events.
 
-There will be a top level event for **localhost:44302** with two children for the **Message** and **localhost:44301** (the back end service).
 
 The "View all telemetry" button will show all the messages, including traces.
 
