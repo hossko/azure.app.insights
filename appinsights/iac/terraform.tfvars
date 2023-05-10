@@ -10,5 +10,5 @@ tags = {
   WorkloadName       = "appinsightsdemo"
 }
 
-administrator_login          = "demoadmin"
-administrator_login_password = "asdiasd!!%YAsiuqdjjqk"
+administrator_login          = ""
+administrator_login_password = ""
