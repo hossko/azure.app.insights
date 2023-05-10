@@ -1,6 +1,13 @@
 **Dotnet Distributed Tracing Examples**
 
 Example of distributed tracing in .NET, using W3C Trace Context and OpenTelemetry.
+Component used:
+* Azure App Services (WebApp, ServiceApp)
+* Azure Function App (WorkerApp)
+* Azure SQL
+* Azure ServiceBus
+* Azure Application Insights
+* Azure Log Analytics WorkSpace
 
 Using Azure Monitor / Application Insights
 ==============================================
