@@ -7,4 +7,4 @@
 **/iac/.terraform.lock.hcl
 **/iac/terraform.tfstate*
 **/.terraform/
-**/**/appsettettings.Development.json
+**/**/appsettings.Development.json
