@@ -128,6 +128,7 @@ resource "azurerm_storage_account" "worker_storage" {
 
 resource "azurerm_linux_function_app" "worker_function" {
   app_settings = {
+    ASPNETCORE_ENVIRONMENT = "Development"
     ServiceBus = azurerm_servicebus_namespace_authorization_rule.authorization_rule.primary_connection_string
   }
   location                   = var.location
@@ -152,6 +153,7 @@ resource "azurerm_linux_function_app" "worker_function" {
 
 resource "azurerm_linux_web_app" "service_app" {
   app_settings = {
+    ASPNETCORE_ENVIRONMENT = "Development"
     APPINSIGHTS_INSTRUMENTATIONKEY             = azurerm_application_insights.application_insights.instrumentation_key
     APPLICATIONINSIGHTS_CONNECTION_STRING      = azurerm_application_insights.application_insights.connection_string
   }
@@ -181,6 +183,7 @@ resource "azurerm_linux_web_app" "service_app" {
 
 resource "azurerm_linux_web_app" "web_app" {
   app_settings = {
+    ASPNETCORE_ENVIRONMENT = "Development"
     APPINSIGHTS_INSTRUMENTATIONKEY             = azurerm_application_insights.application_insights.instrumentation_key
     APPLICATIONINSIGHTS_CONNECTION_STRING      = azurerm_application_insights.application_insights.connection_string
   }
