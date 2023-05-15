@@ -1,6 +1,6 @@
 **Dotnet Distributed Tracing Examples**
 
-This deployment use doesnt include any instrumentation and only include raw services running on AppServices and FunctionApp
+This deployment utilizer OpenTelemetry SDK for Traces, Logs and Metric instrumentation and export to Azure Applicaiton Insights
 Components used:
 * Azure App Services (WebApp, ServiceApp)
 * Azure Function App (WorkerApp)
@@ -50,4 +50,56 @@ Also, by default only Warning logs and above are collected. In the same three `a
         "Default": "Information"
       }
     },
+```
+
+OpenTelemetry Logging with iLogger
+----------------------------------
+
+```dotnet
+//
+using OpenTelemetry.Logs;
+
+
+// OPTIONAL FOR LOG ENRICHMENT, add the CustomLogProcessor.cs Class and include it in the OpenTelemetry initialization
+
+// Define and configure the resource builder
+var resourceBuilder = ResourceBuilder.CreateDefault()
+        // add attributes for the name and version of the service
+        .AddService(_configuration["ServiceName"], serviceVersion: "1.0.0")
+        // add attributes for the OpenTelemetry SDK version
+        .AddTelemetrySdk()
+        // add custom attributes
+        .AddAttributes(new Dictionary<string, object>
+        {
+            ["host.name"] = Environment.MachineName,
+            ["os.description"] = RuntimeInformation.OSDescription,
+            ["deployment.environment"] = _environment.EnvironmentName.ToLowerInvariant(),
+        });
+
+// Then, add the following code after the previous code to define the logging pipeline:
+services.AddLogging(loggingBuilder =>
+                            {
+                                // Configure OpenTelemetry logging
+                                loggingBuilder.ClearProviders()
+                                    .AddOpenTelemetry(loggerOptions =>
+                                    {                          
+                                                loggerOptions
+                                                    // define the resource
+                                                    .SetResourceBuilder(resourceBuilder)
+                                                    // add custom processor
+                                                    .AddProcessor(new CustomLogProcessor())
+                                                    // send logs to the console using exporter
+                                                    .AddConsoleExporter()
+                                                    // send logs to Azure Monitor
+                                                    .AddAzureMonitorLogExporter(options => options.ConnectionString =  _configuration.GetSection("ApplicationInsights")["ConnectionString"]);
+
+                                                loggerOptions.IncludeFormattedMessage = true;
+                                                loggerOptions.IncludeScopes = true;
+                                                loggerOptions.ParseStateValues = true;
+                                    });
+                            });
+
+
+
+
 ```

@@ -78,7 +78,19 @@
                             });
 
 
-
+                    // Define and configure the resource builder
+                    var resourceBuilder = ResourceBuilder.CreateDefault()
+                            // add attributes for the name and version of the service
+                            .AddService(_configuration["ServiceName"], serviceVersion: "1.0.0")
+                            // add attributes for the OpenTelemetry SDK version
+                            .AddTelemetrySdk()
+                            // add custom attributes
+                            .AddAttributes(new Dictionary<string, object>
+                            {
+                                ["host.name"] = Environment.MachineName,
+                                ["os.description"] = RuntimeInformation.OSDescription,
+                                ["deployment.environment"] = _environment.EnvironmentName.ToLowerInvariant(),
+                            });
                     
                     services.AddLogging(loggingBuilder =>
                             {
@@ -86,21 +98,6 @@
                                 loggingBuilder.ClearProviders()
                                     .AddOpenTelemetry(loggerOptions =>
                                     {                          
-                                                // Define and configure the resource builder
-                                                var resourceBuilder = ResourceBuilder.CreateDefault()
-                                                        // add attributes for the name and version of the service
-                                                        .AddService(_configuration["ServiceName"], serviceVersion: "1.0.0")
-                                                        // add attributes for the OpenTelemetry SDK version
-                                                        .AddTelemetrySdk()
-                                                        // add custom attributes
-                                                        .AddAttributes(new Dictionary<string, object>
-                                                        {
-                                                            ["host.name"] = Environment.MachineName,
-                                                            ["os.description"] = RuntimeInformation.OSDescription,
-                                                            ["deployment.environment"] = _environment.EnvironmentName.ToLowerInvariant(),
-                                                        });
-
-
                                                 loggerOptions
                                                     // define the resource
                                                     .SetResourceBuilder(resourceBuilder)
