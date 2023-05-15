@@ -1,6 +1,7 @@
-**Dotnet Distributed Tracing Examples**
+# DotNet Instrumentation using OpenTelemetry
 
-This deployment utilizer OpenTelemetry SDK for Traces, Logs and Metric instrumentation and export to Azure Applicaiton Insights
+
+This deployment utilize OpenTelemetry SDK for Traces, Logs and Metric instrumentation and export to Azure Applicaiton Insights
 Components used:
 * Azure App Services (WebApp, ServiceApp)
 * Azure Function App (WorkerApp)
