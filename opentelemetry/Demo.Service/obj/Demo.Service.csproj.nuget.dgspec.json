@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/coder/azure/azure.app.insights/uninstrumented/Demo.Service/Demo.Service.csproj": {}
+    "/home/coder/azure/azure.app.insights/opentelemetry/Demo.Service/Demo.Service.csproj": {}
   },
   "projects": {
-    "/home/coder/azure/azure.app.insights/uninstrumented/Demo.Service/Demo.Service.csproj": {
+    "/home/coder/azure/azure.app.insights/opentelemetry/Demo.Service/Demo.Service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/coder/azure/azure.app.insights/uninstrumented/Demo.Service/Demo.Service.csproj",
+        "projectUniqueName": "/home/coder/azure/azure.app.insights/opentelemetry/Demo.Service/Demo.Service.csproj",
         "projectName": "Demo.Service",
-        "projectPath": "/home/coder/azure/azure.app.insights/uninstrumented/Demo.Service/Demo.Service.csproj",
+        "projectPath": "/home/coder/azure/azure.app.insights/opentelemetry/Demo.Service/Demo.Service.csproj",
         "packagesPath": "/home/coder/.nuget/packages/",
-        "outputPath": "/home/coder/azure/azure.app.insights/uninstrumented/Demo.Service/obj/",
+        "outputPath": "/home/coder/azure/azure.app.insights/opentelemetry/Demo.Service/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/coder/.nuget/NuGet/NuGet.Config"
@@ -38,6 +38,10 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Azure.Monitor.OpenTelemetry.Exporter": {
+              "target": "Package",
+              "version": "[1.0.0-beta.11, )"
+            },
             "Microsoft.Data.SqlClient": {
               "target": "Package",
               "version": "[5.1.1, )"
@@ -55,6 +59,30 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[7.0.5, )"
+            },
+            "Microsoft.Extensions.Logging": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "OpenTelemetry.Exporter.Console": {
+              "target": "Package",
+              "version": "[1.5.0-alpha.2, )"
+            },
+            "OpenTelemetry.Extensions.Hosting": {
+              "target": "Package",
+              "version": "[1.5.0-alpha.2, )"
+            },
+            "OpenTelemetry.Instrumentation.AspNetCore": {
+              "target": "Package",
+              "version": "[1.0.0-rc9.14, )"
+            },
+            "OpenTelemetry.Instrumentation.Http": {
+              "target": "Package",
+              "version": "[1.0.0-rc9.14, )"
+            },
+            "OpenTelemetry.Instrumentation.SqlClient": {
+              "target": "Package",
+              "version": "[1.0.0-rc9.14, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",

@@ -53,6 +53,12 @@ Also, by default only Warning logs and above are collected. In the same three `a
     },
 ```
 
+```
+dotnet add package --prerelease OpenTelemetry.Extensions.Hosting
+dotnet add package --prerelease OpenTelemetry.Instrumentation.Http
+dotnet add package --prerelease OpenTelemetry.Instrumentation.SqlClient
+```
+
 OpenTelemetry Logging with iLogger
 ----------------------------------
 

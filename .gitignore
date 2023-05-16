@@ -8,4 +8,5 @@
 **/iac/terraform.tfstate*
 **/.terraform/
 **/**/appsettings.Development.json
+**/**/appsettings.json
 **/**/Development.settings.json
